@@ -1,0 +1,37 @@
+
+
+.img{
+    width: 100%;
+}
+
+ul{
+    list-style: none;
+     display: grid;
+    grid-template-rows: repeat (5, 1fr)
+}
+
+
+ul li{
+  height: 100%;
+  /* add this line */
+  mix-blend-mode: hue;
+  /* add this line */
+  transition: all .5s;
+  position: relative;
+  z-index: 2000;
+}
+
+/* ul:hover li{
+    opacity: 0;
+} */
+/* 
+ul li:hover{
+    opacity: 1;
+} */
+
+
+ul li:hover:nth-child(2){
+    box-shadow: 0 0 0 1500px  #1900ff;
+}
+ul li:hover:nth-child(3){
+    box-shadow: 0 0 0 1500px  #00ffff;
